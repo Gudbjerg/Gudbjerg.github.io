@@ -1,0 +1,43 @@
+body{
+  background-color: lightblue;
+  margin-left: 200px;
+}
+header{
+  width: 60%;
+}
+
+ul{
+  list-style-type: none;
+  padding:0;
+
+}
+
+li{
+  display: inline;
+}
+
+li>a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+body>p{
+  border-style: solid;
+  border-color: white;
+  color: white;
+  background-color: grey;
+}
+table{
+  border-style: outset;
+  border-color: white;
+  color: white;
+  background-color: grey;
+  border-style: ridge;
+}
+/* prøvde å bruke border for å dele opp tabellen */
+
+h1{
+  border-style: ridge;
+  border-color: white;
+}
