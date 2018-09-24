@@ -1,0 +1,26 @@
+td,th{
+  border: 2px solid red;
+  background-color: black;
+  color: white;
+}
+table{
+  border-collapse: collapse;
+}
+table{
+  font-size: 24px;
+}
+img{
+  border-style: solid;
+  border: 7px solid red;
+  border-radius: 15px;
+}
+
+ul{  border: 2px solid red;
+    background-color: black;
+    color: white;
+  }
+  
+  ol{  border: 2px solid red;
+      background-color: black;
+      color: white;
+    }

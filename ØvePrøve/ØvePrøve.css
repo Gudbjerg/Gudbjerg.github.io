@@ -17,10 +17,14 @@ body>div {
 
 body>h1{
   color: purple;
+  font-size: 60px;
+  border: 7px solid white;
+  background-color: black;
 }
 img{
   border-style: solid;
   border: 7px solid purple;
+
 }
 
 video{
