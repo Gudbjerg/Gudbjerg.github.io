@@ -1,0 +1,51 @@
+body{
+  margin: auto;
+  background-color: lightblue;
+  margin-bottom: 100px;
+}
+header{
+  margin-left: auto;
+  border-bottom: 40px solid white;
+  background-color: lightblue;
+}
+#navigasjonsbar ul a{
+  text-decoration: none;
+  padding: 30px;
+  background-color: white;
+  color: black;
+}
+nav{
+  margin: 0px;
+  padding: 10px;
+  background-color: white;
+
+}
+#navigasjonsbar ul{
+  text-align: center;
+}
+
+.VinterTurer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main{
+ margin-left: 100px;
+ margin-bottom: 50px;
+}
+footer{
+  margin-left: 90px;
+  border-top: 1px solid black;
+  margin-right: 60px;
+}
+main h2{
+  text-align: center;
+}
+nav søk{
+  float: right;
+   padding: 6px;
+   border: none;
+   margin-top: 8px;
+   margin-right: 16px;
+   font-size: 17px;
+}
