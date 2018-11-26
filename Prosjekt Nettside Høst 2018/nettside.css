@@ -6,13 +6,13 @@ body{
 
 header{
   margin-left: auto;
-  border-bottom: 40px solid white;
+  border-bottom: 15px solid white;
   background-color: white;
 }
 
 #navigasjonsbar ul a{
   text-decoration: none;
-  padding: 30px;
+  padding: 20px;
   background-color: white;
   color: black;
 }
@@ -21,11 +21,18 @@ nav{
   margin: 0px;
   padding: 10px;
   background-color: white;
-
+  font-size: 22px;
 }
 
 #navigasjonsbar ul{
   text-align: center;
+}
+
+#navigasjonsbar a:hover{
+  border: 3px solid black;
+}
+main h2:hover{
+  border: 3px solid black;
 }
 
 .VinterTurer{
@@ -46,7 +53,26 @@ footer{
 
 main h2{
   text-align: center;
+  width: 200px;
+  margin: auto;
 }
 img{
   border: 5px solid white;
+}
+a { color:red }
+
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
+
+.fjell{
+  margin-left: 532px;
+}
+
+h5{
+  font-size: 22px;
+  border: 3px solid black;
+  width: 135px;
+  margin: auto;
 }
