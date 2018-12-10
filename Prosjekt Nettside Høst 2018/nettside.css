@@ -30,14 +30,52 @@ nav{
 
 #navigasjonsbar a:hover{
   border: 3px solid black;
+  border-radius: 10px;
 }
 main h2:hover{
   border: 3px solid black;
 }
 
-.VinterTurer{
+.turgrid{
+  text-decoration: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.turgrid>.galdhøpiggen>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+.turgrid>.glittertinden>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.turgrid>.falketind>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+turgrid>.a:hover{
+  border: 3px solid black;
 }
 
 main{
@@ -58,13 +96,16 @@ main h2{
   border: 3px solid white;
   border-radius: 10px;
 }
+
 img{
   border: 5px solid white;
   border-radius: 8px;
 }
-a { color:red }
 
-a:visited { text-decoration: none; color:white; }
+
+main a { color:white }
+
+a:visited { text-decoration: none; color:black; }
 a:hover { text-decoration: none; color:black; }
 a:focus { text-decoration: none; color:black; }
 a:hover, a:active { text-decoration: none; color:black }
@@ -81,7 +122,7 @@ h5{
   border-radius: 10px;
 }
 
-p{
+.fjelltekst{
   border-style: solid;
   border-color: lightgrey;
   color: black;
@@ -91,3 +132,31 @@ p{
   margin: auto;
   border-radius: 10px;
 }
+video{
+  width: 100%;
+  border-radius: 10px;
+}
+.video{
+  margin: auto;
+  width: 700px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+
+}
+video a:hover{
+  border: 3px solid black;
+}
+h2 a{
+  text-decoration: none;
+}
+
+/*.gridkaos{
+  margin: auto;
+  background-color: lightblue;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+her var det slik det var veldig kaos, viste seg at det var h2 som var problemet, men fikk fikset det.
+*/
