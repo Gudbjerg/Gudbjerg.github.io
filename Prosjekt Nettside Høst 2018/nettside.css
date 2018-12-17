@@ -42,6 +42,7 @@ main h2:hover{
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
 }
+
 .turgrid>.galdhøpiggen>.text{
   margin: center;
   border-style: solid;
@@ -52,6 +53,7 @@ main h2:hover{
   text-align: center;
   border-radius: 10px;
 }
+
 .turgrid>.glittertinden>.text{
   margin: center;
   border-style: solid;
@@ -74,7 +76,7 @@ main h2:hover{
   border-radius: 10px;
 }
 
-turgrid>.Besseggen>.text{
+.turgrid>.besseggen>.text{
   margin: center;
   border-style: solid;
   border-color: white;
@@ -85,7 +87,7 @@ turgrid>.Besseggen>.text{
   border-radius: 10px;
 }
 
-turgrid>.Besshøe>.text{
+.turgrid>.besshøe>.text{
   margin: center;
   border-style: solid;
   border-color: white;
@@ -96,7 +98,7 @@ turgrid>.Besshøe>.text{
   border-radius: 10px;
 }
 
-turgrid>.Bitihorn>.text{
+.turgrid>.bitihorn>.text{
   margin: center;
   border-style: solid;
   border-color: white;
@@ -166,13 +168,22 @@ h5{
   margin: auto;
   border-radius: 10px;
 }
+
+.fjelltekst2{
+  border-style: solid;
+  border-color: lightgrey;
+  color: black;
+  background-color: white;
+  width: 700px;
+  border-radius: 10px;
+
 video{
-  width: 100%;
+  width: 100px;
   border-radius: 10px;
 }
 .video{
   margin: auto;
-  width: 700px;
+  width: 400px;
   border-style: solid;
   border-color: white;
   border-radius: 10px;
@@ -183,6 +194,24 @@ video a:hover{
 }
 h2 a{
   text-decoration: none;
+}
+
+h6{
+  text-align: center;
+  font-size: 30px;
+  border: 3px solid white;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+main h6:hover{
+  border: 3px solid black;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
 }
 
 /*.gridkaos{
