@@ -177,13 +177,10 @@ h5{
   width: 700px;
   border-radius: 10px;
 
-video{
-  width: 100px;
-  border-radius: 10px;
 }
 .video{
   margin: auto;
-  width: 400px;
+  width: 100px;
   border-style: solid;
   border-color: white;
   border-radius: 10px;
