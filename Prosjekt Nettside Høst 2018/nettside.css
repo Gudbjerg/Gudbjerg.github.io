@@ -179,8 +179,9 @@ h5{
 
 }
 .fjellfilm{
+  margin: auto;
   width: 500px;
-  margin: center;
+  height: 353px;
   border-style: solid;
   border-color: white;
 }
