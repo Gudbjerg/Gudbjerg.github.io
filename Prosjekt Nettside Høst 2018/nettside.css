@@ -186,7 +186,7 @@ h5{
   border-radius: 10px;
 
 }
-fjellfilm a:hover{
+.fjellfilm a:hover{
   border: 3px solid black;
 }
 h2 a{
@@ -195,7 +195,7 @@ h2 a{
 
 h6{
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   border: 3px solid white;
   width: 300px;
   margin: auto;
@@ -210,6 +210,8 @@ main h6:hover{
   display: grid;
   grid-template-columns: repeat(2, 1fr)
 }
+
+.vi
 
 /*.gridkaos{
   margin: auto;
