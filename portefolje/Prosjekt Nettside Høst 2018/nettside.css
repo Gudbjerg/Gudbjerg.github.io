@@ -1,0 +1,221 @@
+body{
+  margin: auto;
+  background-color: lightblue;
+  margin-bottom: 100px;
+}
+
+header{
+  margin-left: auto;
+  border-bottom: 15px solid white;
+  background-color: white;
+}
+
+#navigasjonsbar ul a{
+  text-decoration: none;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+nav{
+  margin: 0px;
+  padding: 10px;
+  background-color: white;
+  font-size: 22px;
+}
+
+#navigasjonsbar ul{
+  text-align: center;
+}
+
+#navigasjonsbar a:hover{
+  border: 3px solid black;
+  border-radius: 10px;
+}
+main h2:hover{
+  border: 3px solid black;
+}
+
+.turgrid{
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.turgrid>.galdhøpiggen>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.turgrid>.glittertinden>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.turgrid>.falketind>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.turgrid>.besseggen>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.turgrid>.besshøe>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.turgrid>.bitihorn>.text{
+  margin: center;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightblue;
+  width: 366px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.turgrid img:hover{
+  border: 5px solid black;
+}
+
+main{
+ margin-left: 100px;
+ margin-bottom: 50px;
+}
+
+footer{
+  margin-left: 90px;
+  border-top: 1px solid black;
+  margin-right: 60px;
+}
+
+main h2{
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+img{
+  border: 5px solid white;
+  border-radius: 8px;
+}
+
+
+main a { color:white }
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
+
+.fjell{
+  margin-left: 532px;
+}
+
+h5{
+  text-align: center;
+  font-size: 22px;
+  border: 3px solid white;
+  width: 135px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.fjelltekst{
+  border-style: solid;
+  border-color: lightgrey;
+  color: black;
+  background-color: white;
+  width: 550px;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.fjelltekst2{
+  border-style: solid;
+  border-color: lightgrey;
+  color: black;
+  background-color: white;
+  width: 700px;
+  border-radius: 10px;
+
+}
+.fjellfilm{
+  margin: auto;
+  width: 500px;
+  height: 353px;
+  border-style: solid;
+  border-color: white;
+}
+.fjellfilm a:hover{
+  border: 3px solid black;
+}
+h2 a{
+  text-decoration: none;
+}
+
+h6{
+  text-align: center;
+  font-size: 50px;
+  border: 3px solid white;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+main h6:hover{
+  border: 3px solid black;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+/*.gridkaos{
+  margin: auto;
+  background-color: lightblue;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+her var det slik det var veldig kaos, viste seg at det var h2 som var problemet, men fikk fikset det.
+*/

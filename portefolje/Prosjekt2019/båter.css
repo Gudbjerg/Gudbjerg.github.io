@@ -1,0 +1,280 @@
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-decoration: none;
+  color: white;
+
+}
+
+header{
+  background-image: url("vann.jpg");
+  background-position: center;
+  width: 100%;
+}
+
+body{
+    background-color: #708090;
+}
+h2{
+  border-style: ridge;
+  border-color: white;
+  text-align: center;
+  font-size: 55px;
+  font-family: monospace;
+  width: 800px;
+  margin: auto;
+}
+
+nav{
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+nav a{
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  text-align: center;
+}
+
+header a:hover{
+  transform: scale(0.9);
+  transition: all .2s ease-in-out;
+}
+
+div.sorter{
+  text-align: center;
+}
+
+sorter{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  background-color: lightgrey;
+}
+
+button a:hover{
+  transform: scale3d(1.1);
+  transition: all .2s ease-in-out;
+}
+
+.GridA{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+a.Båter{
+  display: block;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+a.a1{
+  display: block;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+a.a2{
+  display: block;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+a.a3{
+  display: block;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.a1: hover{
+  transform: scale(0.9);
+  transition: all .2s ease-in-out;
+}
+
+#annonse:hover{
+  transform: scale(0.9);
+  transition: all .2s ease-in-out;
+}
+
+article.Båter{
+  display: block;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+a#annonse{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.container{
+  //*grid-column: span 3;
+  margin: auto;
+  width:100%;*//
+  display: block;
+  text-align:center;
+}
+.mainanonnse {
+  display: block;
+  grid-template-columns: 300px;
+}
+
+video.Bvideo{
+  margin-left: 250px;
+  border-style: solid;
+  border-color: White;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h6{
+  text-align: center;
+  font-size: 30px;
+  border: 3px solid white;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+h3{
+  padding: 10px;
+  border-style: solid;
+  border-color: white;
+  background-color: lightgrey;
+  width: 150px;
+  margin: auto;
+}
+
+div.båttekst{
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightgrey;
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  font-family: monospace;
+  border-radius: 5px;
+}
+
+div.båttekst2{
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightgrey;
+  width: 1100px;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  font-family: monospace;
+  border-radius: 5px;
+}
+
+div.båttekst3{
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: lightgrey;
+  width: 90%;
+  height: 600px;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  font-family: monospace;
+  border-radius: 5px;
+  background-image: url("forsidebilde.jpg");
+  background-position: center;
+}
+
+div#main.container{
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+
+.gridB{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: lightgrey;
+  width:900px;
+  height: 700px;
+  margin: auto;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+}
+.mainanonnse {
+  grid-column-start: span 2;
+}
+
+.Båtinfo{
+  font-size: 25px;
+  font-family: monospace;
+}
+
+button{
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 15px;
+}
+
+div.infoside{
+  border-style: solid;
+  border-color: white;
+  background-color: lightgrey;
+  color: black;
+  text-align: center;
+  grid-column-start: 2;
+  width: 600px;
+  border-radius: 10px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gbåter</title>
+    <link rel="stylesheet" href="båter.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDup9Wi5Vm6q7YSZ1wt6Lsdmp9rp_4B-1o",
+        authDomain: "mitt-prosjekt-46166.firebaseapp.com",
+        databaseURL: "https://mitt-prosjekt-46166.firebaseio.com",
+        projectId: "mitt-prosjekt-46166",
+        storageBucket: "mitt-prosjekt-46166.appspot.com",
+        messagingSenderId: "456598388885"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+
+  <body>
+
+    <header>
+
+        <br>
+        <br>
+
+      <h2>GUDBJERGS BÅTER</h2>
+
+      <nav>
+
+        <a href="hjem.html">Hjem</a>
+        <a href="båter.html">Alle Båter</a>
+        <a href="info.html">Om Oss</a>
+
+        <br>
+
+      </nav>
+
+      <div class="sorter">
+          <h3>Sorter etter</h3>
+          <br>
+          <button onclick="sorterAlder()"><a>Alder</a></button>
+          <button onclick="sorterSynkende()"><a>Synkende pris</a></button>
+          <button onclick="sorterStigende()"><a>Stigende pris</a></button>
+          <button onclick="sorterFot()"><a>Fot</a></button>
+      </div>
+
+      <br>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <script>
+    const main = document.querySelector("main");
+    const db = firebase.database();
+    const båter = db.ref("Båter");
+
+    function genererHTML(snapshot){
+      let båter = snapshot.val();
+      let key = snapshot.key;
+      let parent = snapshot.ref.parent.key;
+      let parentParent = snapshot.ref.parent.parent.key;
+      let ref = parent + "/" + key;
+
+      console.log(snapshot.val())
+
+      main.innerHTML +=`
+
+      <a id="annonse" href="annonse.html?id=${key}">
+        <article class="Båter">
+          <h1>${båter.Merke}${båter.Modell}</h1>
+          <br>
+          <img src="${båter.Bilde}" alt="">
+          <p> Type: ${båter.Type} </p>
+          <p> År: ${båter.År} </p>
+          <p> fot: ${båter.Fot} </p>
+          <p> Pris: ${båter.Pris} </p>
+        </article>
+      </a>
+        `
+    }
+
+    function visAlleBåter(){
+      main.innerHTML= ``
+      båter.on("child_added", genererHTML)
+    }
+
+    visAlleBåter();
+
+        function genererBåterRevers(snapshot) {
+          let båter = snapshot.val();
+          let key = snapshot.key;
+          let nyttelement = document.createElement("article");
+          nyttelement.innerHTML =`
+          <a id="annonse" href="annonse.html?id=${key}">
+          <h1>${båter.Merke}${båter.Modell}</h1>
+          <br>
+          <img src="${båter.Bilde}" alt="">
+          <p>Type: ${båter.Type} År: ${båter.År}</p>
+          <p> fot: ${båter.Fot} Pris: ${båter.Pris}</p>
+          </a>`;
+          nyttelement.classList.add("Båter")
+          main.insertBefore(nyttelement, main.childNodes[0]);
+        }
+
+        function sorterAlder() {
+          console.log("halo")
+          main.innerHTML = ``
+          båter.orderByChild("År")
+          .on("child_added", genererHTML);
+
+        }
+        function sorterStigende() {
+          main.innerHTML = ``
+          båter.orderByChild("Pris").on("child_added",genererHTML);
+
+        }
+
+        function sorterSynkende() {
+          main.innerHTML = ``
+          båter.orderByChild("Pris").on("child_added",genererBåterRevers);
+
+        }
+
+        function sorterFot(){
+          main.innerHTML = ``
+          båter.orderByChild("Fot").on("child_added",genererHTML);
+
+        }
+
+
+    </script>
+
+  </body>
+</html>

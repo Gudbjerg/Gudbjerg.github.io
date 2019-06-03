@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gbåter</title>
+    <link rel="stylesheet" href="båter.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDup9Wi5Vm6q7YSZ1wt6Lsdmp9rp_4B-1o",
+        authDomain: "mitt-prosjekt-46166.firebaseapp.com",
+        databaseURL: "https://mitt-prosjekt-46166.firebaseio.com",
+        projectId: "mitt-prosjekt-46166",
+        storageBucket: "mitt-prosjekt-46166.appspot.com",
+        messagingSenderId: "456598388885"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+
+  <body>
+
+    <header>
+
+        <br>
+        <br>
+
+      <h2>GUDBJERGS BÅTER</h2>
+
+      <nav>
+
+        <a href="hjem.html">Hjem</a>
+        <a href="båter.html">Alle Båter</a>
+        <a href="info.html">Om Oss</a>
+
+        <br>
+
+      </nav>
+
+    </header>
+
+  <div class="gridB">
+
+    <main class="mainanonnse">
+      <div id="main" class="container">
+
+      </div>
+    </main>
+
+    <div class="Båtinfo">
+      <p>BÅT INFORMASJON</p>
+
+      <p> Investering med oss betyr at du får poeng som skal brukes i vårt eksklusive Holiday Program.
+         Bruk disse punktene til å bestille en eksklusiv seilferie i 53 destinasjoner over hele verden,
+          luksuriøse villaer eller ski i alpene.</p>
+
+          <br>
+          <br>
+
+      <button type="button" name="Handlekurv">Legg i Handlekurv</button>
+
+    </div>
+
+  </div>
+
+    <script>
+    const main = document.getElementById("main");
+
+
+    let url_string = window.location.href;
+    let url = new URL(url_string);
+    let id = url.searchParams.get("id");
+    let parentid = url.searchParams.get("parent");
+
+
+    console.log("id" + id );
+
+    const db = firebase.database();
+    const båter = db.ref("Båter/" + id );
+
+    function visAnnonse(snapshot) {
+      console.log(snapshot.val())
+      let key = snapshot.key;
+      let båt = snapshot.val();
+      let parent = snapshot.ref.parent.key;
+
+      main.innerHTML +=`
+      <div class="innholdbåt">
+      <h1>${båt.Merke}</h1>
+      <p><img class="bildeA" src="${båt.Bilde}" alt="img"></p>
+      <p> Merke: ${båt.Merke} </p>
+      <p> Type: ${båt.Type} </p>
+      <p> År: ${båt.År} </p>
+      <p> Fot: ${båt.Fot}</p>
+      <p> Pris: ${båt.Pris} kroner </p>
+      </div>
+      `
+      ;
+    }
+
+    function visBåt(){
+      main.innerHTML = "";
+        båter.on("value",visAnnonse);
+      }
+
+      visBåt();
+
+    </script>
+
+  </body>
+</html>
